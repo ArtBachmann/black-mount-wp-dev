@@ -1,0 +1,38 @@
+.footer {
+  margin-top: auto;
+  /* background: var(--mainBlack); */
+  background-image: url('../images/BlackMountPubFooter.png');
+  background-repeat: repeat-x;
+  padding-top: 2rem;
+  text-align: center;
+  color: var(--mainWhite);
+  flex-shrink: 0;
+}
+.links a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  margin: 0.5rem 1rem;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  font-weight: bold;
+}
+.links a:hover {
+  color: var(--primaryColor);
+}
+.icons a {
+  display: inline-block;
+  margin: 0.2rem;
+  font-size: 1.3rem;
+  color: var(--mainWhite);
+  transition: var(--mainTransition);
+}
+.icons a:hover {
+  color: var(--primaryColor);
+}
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  line-height: 2;
+}
