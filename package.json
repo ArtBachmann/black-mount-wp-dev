@@ -13,13 +13,17 @@
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-styled-components": "^3.1.19",
+    "gatsby-plugin-transition-link": "^1.17.7",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-source-graphql": "^2.1.28",
+    "gatsby-source-wordpress": "^3.1.63",
     "gatsby-transformer-sharp": "^2.3.7",
+    "gsap": "^3.2.2",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {

@@ -35,14 +35,32 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: 'gatsby-source-wordpress',
       options: {
-        typeName: 'WPGraphQL',
-        fieldName: 'wpgraphql',
-        url: 'http://test.artbachmann.fi/theblackmountpub',
-        // refetchInterval: 60,
-      }
+        excludedRoutes: [
+          '/wp/v2/users/**',
+          '/wp/v2/settings*',
+          '/wp/v2/themes*',
+        ],
+        baseUrl: 'test.artbachmann.fi/theblackmountpub',
+        protocol: 'http',
+        hostingWPCOM: false,
+        useACF: true,
+        searchAndReplaceContentUrls: {
+          sourceUrl: 'http://test.artbachmann.fi/theblackmountpub',
+          replacementUrl: '',
+        },
+      },
     },
+    // {
+    //   resolve: 'gatsby-source-graphql',
+    //   options: {
+    //     typeName: 'WPGraphQL',
+    //     fieldName: 'wpgraphql',
+    //     url: 'http://test.artbachmann.fi/theblackmountpub',
+    //     // refetchInterval: 60,
+    //   }
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
